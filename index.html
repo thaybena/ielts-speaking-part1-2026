@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IELTS 5.5 — Speaking Lesson 1: Part 1 Fluency</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  /* ===== TOKENS ===== */
+  :root {
+    --navy:      #1A3A5C;
+    --navy-mid:  #2E6DA4;
+    --navy-l:    #D6E4F0;
+    --navy-p:    #EEF5FB;
+    --gold:      #B8860B;
+    --gold-l:    #FDF6E3;
+    --green:     #1B4332;
+    --green-l:   #D5EDE2;
+    --green-p:   #EBF5EF;
+    --orange:    #7B3F00;
+    --orange-l:  #FDF3E7;
+    --purple:    #3B0A45;
+    --purple-l:  #F3EAF9;
+    --red:       #8B0000;
+    --red-l:     #FFF5F5;
+    --teal:      #004D52;
+    --teal-l:    #E0F4F5;
+    --gray-bg:   #F7F8FA;
+    --gray-mid:  #C5CDD6;
+    --text:      #1A1A1A;
+    --text-mid:  #444;
+    --white:     #FFFFFF;
+
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body:    'Source Serif 4', Georgia, serif;
+    --font-mono:    'JetBrains Mono', monospace;
+    --radius:       6px;
+    --radius-lg:    12px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--text);
+    background: #f0f2f5;
+    line-height: 1.65;
+  }
+
+  /* ===== PRINT ===== */
+  @media print {
+    body { background: white; }
+    .no-print { display: none !important; }
+    .page { box-shadow: none; margin: 0; border-radius: 0; }
+    .section-block { break-inside: avoid; }
+    .are-box { break-inside: avoid; }
+    @page { margin: 1.8cm 1.6cm; }
+  }
+
+  /* ===== PAGE WRAPPER ===== */
+  .page {
+    max-width: 980px;
+    margin: 0 auto;
+    background: var(--white);
+    box-shadow: 0 4px 40px rgba(0,0,0,.12);
+  }
+
+  /* ===== TOP PRINT BAR ===== */
+  .print-bar {
+    background: var(--navy);
+    padding: 10px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .print-bar span { color: var(--navy-l); font-size: 13px; font-family: var(--font-mono); letter-spacing:.04em; }
+  .print-btn {
+    background: var(--gold);
+    color: white;
+    border: none;
+    padding: 6px 18px;
+    border-radius: var(--radius);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .06em;
+    cursor: pointer;
+    transition: opacity .2s;
+  }
+  .print-btn:hover { opacity: .85; }
+
+  /* ===== COVER HEADER ===== */
+  .cover {
+    background: var(--navy);
+    padding: 48px 40px 36px;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 260px; height: 260px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.04);
+  }
+  .cover::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: 30%;
+    width: 160px; height: 160px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.03);
+  }
+  .cover-eyebrow {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .cover-title {
+    font-family: var(--font-display);
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1.15;
+    margin-bottom: 8px;
+  }
+  .cover-subtitle {
+    font-size: 15px;
+    color: var(--navy-l);
+    font-style: italic;
+    margin-bottom: 28px;
+  }
+  .cover-meta {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 24px;
+  }
+  .meta-field {
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: var(--radius);
+    padding: 10px 14px;
+  }
+  .meta-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .meta-input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    color: white;
+    font-family: var(--font-body);
+    font-size: 14px;
+    padding: 2px 0;
+    outline: none;
+  }
+  .meta-input::placeholder { color: rgba(255,255,255,.35); }
+
+  /* ===== INFO BADGES ===== */
+  .lesson-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-bottom: 2px solid var(--navy-l);
+  }
+  .stat-cell {
+    padding: 18px 20px;
+    border-right: 1px solid var(--navy-l);
+    text-align: center;
+  }
+  .stat-cell:last-child { border-right: none; }
+  .stat-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--gray-mid);
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 4px;
+  }
+  .stat-value {
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+  }
+
+  /* ===== SECTION WRAPPER ===== */
+  .content { padding: 0 40px 40px; }
+
+  /* ===== HOW TO USE ===== */
+  .how-to-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border: 1.5px solid var(--navy-l);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin: 24px 0 0;
+  }
+  .how-panel {
+    padding: 28px 28px 24px;
+  }
+  .how-panel:first-child {
+    border-right: 1.5px solid var(--navy-l);
+    background: var(--white);
+  }
+  .how-panel:last-child {
+    background: var(--navy-p);
+  }
+  .how-title {
+    font-family: var(--font-display);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--navy-l);
+  }
+  .are-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--navy-l);
+  }
+  .are-row:last-child { border-bottom: none; }
+  .are-letter {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: white;
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 900;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .are-text strong {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 2px;
+    font-family: var(--font-mono);
+    letter-spacing: .04em;
+  }
+  .are-text span { font-size: 14px; color: var(--text-mid); }
+
+  .opener-item {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    padding: 5px 0;
+    border-bottom: 1px dashed var(--navy-l);
+  }
+  .opener-item:last-of-type { border-bottom: none; }
+  .opener-phrase {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--green);
+    min-width: 180px;
+  }
+  .opener-note {
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+  }
+  .warning-note {
+    margin-top: 14px;
+    padding: 8px 14px;
+    background: var(--red-l);
+    border-left: 3px solid var(--red);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    font-size: 13px;
+    color: var(--red);
+    font-style: italic;
+  }
+
+  /* ===== SECTION BANNER ===== */
+  .section-banner {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 24px;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    margin-top: 36px;
+  }
+  .section-letter-badge {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.2);
+    border: 2px solid rgba(255,255,255,.4);
+    color: white;
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 900;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .section-text {}
+  .section-eyebrow {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 600;
+    color: rgba(255,255,255,.6);
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  .section-title {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.2;
+  }
+  .section-sub {
+    font-size: 12px;
+    color: rgba(255,255,255,.7);
+    font-style: italic;
+    margin-top: 2px;
+  }
+
+  /* ===== SECTION BODY ===== */
+  .section-body {
+    border: 1.5px solid var(--navy-l);
+    border-top: none;
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+    overflow: hidden;
+  }
+
+  /* ===== ARE BOX ===== */
+  .are-box {
+    border-bottom: 1px solid var(--navy-l);
+  }
+  .are-box:last-of-type { border-bottom: none; }
+
+  .q-header {
+    display: flex;
+    align-items: stretch;
+    background: var(--navy-l);
+  }
+  .q-num {
+    width: 52px;
+    background: var(--navy);
+    color: white;
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .q-text {
+    padding: 11px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.4;
+  }
+
+  .are-rows { }
+  .are-input-row {
+    display: grid;
+    grid-template-columns: 52px 80px 1fr;
+    min-height: 62px;
+    border-top: 1px solid var(--navy-l);
+  }
+  .are-input-row:nth-child(2) { background: white; }
+  .are-input-row:nth-child(3) { background: var(--navy-p); }
+  .are-input-row:nth-child(4) { background: white; }
+
+  .are-side {
+    background: var(--navy);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 0;
+    border-right: 1px solid rgba(255,255,255,.1);
+  }
+  .are-side-letter {
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 900;
+    color: white;
+    line-height: 1;
+  }
+  .are-side-label {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    color: rgba(255,255,255,.5);
+    letter-spacing: .06em;
+    margin-top: 2px;
+    text-transform: uppercase;
+  }
+
+  .are-hint-col {
+    padding: 8px 12px;
+    border-right: 1px solid var(--navy-l);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .are-hint {
+    font-size: 10.5px;
+    color: #888;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .are-write-col {
+    padding: 8px 14px;
+    position: relative;
+  }
+  .write-line {
+    width: 100%;
+    border: none;
+    border-bottom: 1.5px solid var(--navy-l);
+    background: transparent;
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--text);
+    outline: none;
+    padding: 4px 0;
+    margin-bottom: 4px;
+    display: block;
+    transition: border-color .2s;
+  }
+  .write-line:focus { border-bottom-color: var(--navy); }
+  .write-line:last-child { margin-bottom: 0; }
+
+  /* ===== VOCAB BOX ===== */
+  .vocab-section {
+    background: var(--gray-bg);
+    border-top: 1.5px solid var(--navy-l);
+    padding: 14px 20px;
+  }
+  .vocab-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--navy);
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .vocab-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .vocab-chip {
+    background: var(--white);
+    border: 1.5px solid var(--navy-l);
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--navy);
+    font-family: var(--font-body);
+    cursor: default;
+    transition: background .15s, border-color .15s;
+  }
+  .vocab-chip:hover {
+    background: var(--navy-l);
+    border-color: var(--navy-mid);
+  }
+
+  /* ===== DRILL TABLE (Section V) ===== */
+  .drill-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    font-size: 14px;
+  }
+  .drill-table th {
+    background: var(--navy);
+    color: white;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    padding: 10px 14px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,.1);
+  }
+  .drill-table th:first-child { text-align: center; width: 50px; }
+  .drill-table td {
+    border: 1px solid var(--navy-l);
+    padding: 8px 14px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .drill-table td:nth-child(2) {
+    text-align: left;
+    min-width: 200px;
+  }
+  .drill-table tr:nth-child(even) td { background: var(--navy-p); }
+  .drill-table tr:nth-child(odd) td { background: white; }
+  .cb { font-size: 18px; color: var(--gray-mid); }
+  .qnum-cell {
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--navy);
+    font-size: 16px;
+  }
+
+  /* ===== UPGRADE SECTION (W) ===== */
+  .upgrade-block {
+    border: 1.5px solid var(--navy-l);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+  .upgrade-q {
+    background: var(--navy-l);
+    padding: 11px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--navy);
+  }
+  .upgrade-q span {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--gold);
+    margin-right: 8px;
+  }
+  .upgrade-row {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    min-height: 52px;
+    border-top: 1px solid var(--navy-l);
+  }
+  .upgrade-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+  }
+  .upgrade-label.weak { background: var(--red); color: white; }
+  .upgrade-label.better { background: var(--green); color: white; }
+  .upgrade-content {
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+  }
+  .upgrade-content.weak-text {
+    color: #666;
+    font-style: italic;
+    background: var(--red-l);
+    font-size: 14px;
+  }
+  .upgrade-content textarea {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--text);
+    resize: none;
+    outline: none;
+    min-height: 54px;
+  }
+
+  /* ===== RECORDING TABLE (X) ===== */
+  .rec-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 16px;
+  }
+  .rec-table th {
+    background: var(--purple);
+    color: white;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .06em;
+    padding: 10px 12px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,.1);
+  }
+  .rec-table td {
+    border: 1px solid var(--navy-l);
+    padding: 9px 12px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .rec-table td:first-child { text-align: left; font-size: 14px; }
+  .rec-table td:last-child { text-align: left; }
+  .rec-table tr:nth-child(even) td { background: var(--purple-l); }
+  .rec-table tr:nth-child(odd) td { background: white; }
+  .rec-table td input[type=text] {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--gray-mid);
+    background: transparent;
+    font-family: var(--font-body);
+    font-size: 13px;
+    outline: none;
+    padding: 2px 0;
+  }
+
+  /* ===== SELF-EVAL TABLE (Y) ===== */
+  .eval-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 16px;
+  }
+  .eval-table th {
+    background: var(--teal);
+    color: white;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .06em;
+    padding: 10px 14px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,.1);
+  }
+  .eval-table th:first-child { text-align: left; }
+  .eval-table td {
+    border: 1px solid var(--navy-l);
+    padding: 10px 14px;
+    vertical-align: middle;
+  }
+  .eval-table td:nth-child(2), .eval-table td:nth-child(3) { text-align: center; }
+  .eval-table tr:nth-child(even) td { background: var(--teal-l); }
+  .eval-table tr:nth-child(odd) td { background: white; }
+  .eval-table td input[type=text] {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--gray-mid);
+    background: transparent;
+    font-family: var(--font-body);
+    font-size: 13px;
+    outline: none;
+    padding: 2px 0;
+  }
+
+  /* ===== TEACHER COMMENT ===== */
+  .teacher-block {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1.5px solid var(--navy-l);
+    margin-top: 24px;
+  }
+  .teacher-row {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    min-height: 100px;
+    border-bottom: 1px solid var(--navy-l);
+  }
+  .teacher-row:last-child { border-bottom: none; }
+  .teacher-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 12px;
+    text-align: center;
+  }
+  .teacher-label .tl-icon { font-size: 22px; margin-bottom: 4px; }
+  .teacher-label .tl-name {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: white;
+  }
+  .teacher-content {
+    padding: 16px 20px;
+    position: relative;
+  }
+  .teacher-content textarea {
+    width: 100%;
+    min-height: 80px;
+    border: none;
+    background: transparent;
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--text);
+    resize: vertical;
+    outline: none;
+    line-height: 1.7;
+  }
+  .teacher-hint {
+    font-size: 11.5px;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 8px;
+  }
+
+  /* ===== GENERIC SECTION HEADINGS ===== */
+  .section-heading {
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--navy);
+    padding: 20px 0 12px;
+    border-bottom: 2px solid var(--navy-l);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-heading .sh-badge {
+    background: var(--navy);
+    color: white;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    padding: 3px 10px;
+    border-radius: 20px;
+  }
+
+  /* ===== INFO PANEL ===== */
+  .info-panel {
+    border-left: 4px solid var(--navy);
+    background: var(--navy-p);
+    padding: 14px 18px;
+    border-radius: 0 var(--radius) var(--radius) 0;
+    margin: 16px 0;
+    font-size: 14px;
+    color: var(--text-mid);
+    line-height: 1.7;
+  }
+  .info-panel strong { color: var(--navy); }
+  .info-panel ul { margin: 6px 0 0 16px; }
+  .info-panel li { margin-bottom: 3px; }
+
+  /* ===== COLOUR VARIANTS ===== */
+  .bg-navy    { background: var(--navy); }
+  .bg-green   { background: var(--green); }
+  .bg-teal    { background: var(--teal); }
+  .bg-orange  { background: var(--orange); }
+  .bg-purple  { background: var(--purple); }
+  .bg-red     { background: var(--red); }
+
+  .accent-navy   { color: var(--navy); }
+  .accent-green  { color: var(--green); }
+  .accent-teal   { color: var(--teal); }
+  .accent-orange { color: var(--orange); }
+  .accent-purple { color: var(--purple); }
+  .accent-red    { color: var(--red); }
+
+  .are-side.col-navy   { background: var(--navy); }
+  .are-side.col-green  { background: var(--green); }
+  .are-side.col-teal   { background: var(--teal); }
+  .are-side.col-orange { background: var(--orange); }
+  .are-side.col-purple { background: var(--purple); }
+  .are-side.col-red    { background: var(--red); }
+
+  .q-num.col-navy   { background: var(--navy); }
+  .q-num.col-green  { background: var(--green); }
+  .q-num.col-teal   { background: var(--teal); }
+  .q-num.col-orange { background: var(--orange); }
+  .q-num.col-purple { background: var(--purple); }
+  .q-num.col-red    { background: var(--red); }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 680px) {
+    .cover-meta { grid-template-columns: 1fr 1fr; }
+    .how-to-grid { grid-template-columns: 1fr; }
+    .how-panel:first-child { border-right: none; border-bottom: 1.5px solid var(--navy-l); }
+    .lesson-stats { grid-template-columns: 1fr 1fr; }
+    .are-input-row { grid-template-columns: 44px 64px 1fr; }
+    .content { padding: 0 16px 24px; }
+    .cover { padding: 28px 16px 24px; }
+    .cover-title { font-size: 26px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- PRINT BAR -->
+  <div class="print-bar no-print">
+    <span>IELTS 5.5 Course · Speaking Lesson 1 · Part 1 Fluency Worksheet</span>
+    <button class="print-btn" onclick="window.print()">⎙ PRINT / SAVE PDF</button>
+  </div>
+
+  <!-- COVER -->
+  <div class="cover">
+    <div class="cover-eyebrow">IELTS 5.5 Course · Speaking Lesson 1</div>
+    <div class="cover-title">Part 1 Fluency<br>Forecast Practice</div>
+    <div class="cover-subtitle">A.R.E Framework · 3-Second Rule · Sections A–U · 81 Questions</div>
+    <div class="cover-meta">
+      <div class="meta-field">
+        <div class="meta-label">Student Name</div>
+        <input class="meta-input" type="text" placeholder="Your name">
+      </div>
+      <div class="meta-field">
+        <div class="meta-label">Class / Level</div>
+        <input class="meta-input" type="text" placeholder="e.g. IELTS 5.5">
+      </div>
+      <div class="meta-field">
+        <div class="meta-label">Date</div>
+        <input class="meta-input" type="text" placeholder="DD / MM / YYYY">
+      </div>
+      <div class="meta-field">
+        <div class="meta-label">Target Band</div>
+        <input class="meta-input" type="text" placeholder="e.g. 6.0">
+      </div>
+    </div>
+  </div>
+
+  <!-- LESSON STATS -->
+  <div class="lesson-stats">
+    <div class="stat-cell"><span class="stat-label">Skill Focus</span><span class="stat-value">Speaking Part 1</span></div>
+    <div class="stat-cell"><span class="stat-label">Self Study</span><span class="stat-value">Record 5 answers</span></div>
+    <div class="stat-cell"><span class="stat-label">Homework</span><span class="stat-value">10 Part 1 questions</span></div>
+    <div class="stat-cell"><span class="stat-label">Target</span><span class="stat-value">Fluency Development</span></div>
+  </div>
+
+  <div class="content">
+
+    <!-- ===== HOW TO USE ===== -->
+    <div class="section-heading" style="margin-top:28px;">
+      <span class="sh-badge">HOW TO USE</span>
+      The A.R.E Framework &amp; 3-Second Rule
+    </div>
+
+    <div class="how-to-grid">
+      <div class="how-panel">
+        <div class="how-title">THE A.R.E FRAMEWORK</div>
+        <p style="font-size:14px;color:var(--text-mid);margin-bottom:14px;">Every answer in IELTS Speaking Part 1 should follow this three-part structure. Aim for 2–4 sentences total per answer.</p>
+        <div class="are-row">
+          <div class="are-letter">A</div>
+          <div class="are-text"><strong>ANSWER</strong><span>Give your direct answer immediately. Do not hesitate or repeat the question.</span></div>
+        </div>
+        <div class="are-row">
+          <div class="are-letter">R</div>
+          <div class="are-text"><strong>REASON</strong><span>Explain one clear reason. Start with <em>because, since,</em> or <em>as</em>.</span></div>
+        </div>
+        <div class="are-row">
+          <div class="are-letter">E</div>
+          <div class="are-text"><strong>EXAMPLE</strong><span>Support with a personal example, habit, or specific memory.</span></div>
+        </div>
+      </div>
+      <div class="how-panel">
+        <div class="how-title">THE 3-SECOND RULE</div>
+        <p style="font-size:14px;color:var(--text-mid);margin-bottom:14px;">Begin speaking <strong>within 3 seconds</strong> of hearing the question. Use one opener to bridge the gap if needed:</p>
+        <div class="opener-item"><span class="opener-phrase">Well, I think…</span><span class="opener-note">natural, common starter</span></div>
+        <div class="opener-item"><span class="opener-phrase">To be honest…</span><span class="opener-note">shows authenticity</span></div>
+        <div class="opener-item"><span class="opener-phrase">Actually…</span><span class="opener-note">signals a considered opinion</span></div>
+        <div class="opener-item"><span class="opener-phrase">In my case…</span><span class="opener-note">personalises the answer</span></div>
+        <div class="opener-item"><span class="opener-phrase">If my memory serves me right…</span><span class="opener-note">useful for past events</span></div>
+        <div class="warning-note">⚠ DO NOT open every answer with the same phrase — the examiner will notice.</div>
+      </div>
+    </div>
+
+    <!-- ===== SECTIONS A–U TEMPLATE ===== -->
+
+    <!-- Generate sections via JS below -->
+    <div id="sections-container"></div>
+
+    <!-- ===== SECTION V: 3-SECOND DRILL ===== -->
+    <div class="section-banner bg-orange" style="margin-top:36px;">
+      <div class="section-letter-badge">V</div>
+      <div class="section-text">
+        <div class="section-eyebrow">Section V · Practice Drill</div>
+        <div class="section-title">3-Second Response Drill</div>
+        <div class="section-sub">Timed speaking — your teacher asks, you must start within 3 seconds</div>
+      </div>
+    </div>
+    <div class="section-body">
+      <div style="padding:16px 20px 0;">
+        <div class="info-panel" style="border-color:var(--orange);">
+          Your teacher will ask a question from any section of this worksheet. Your task is to begin speaking within 3 seconds without preparation.
+          <ul>
+            <li><strong>Started ≤3 sec:</strong> Did you open your mouth and begin before 3 seconds had passed?</li>
+            <li><strong>Used A.R.E:</strong> Did your answer contain an Answer, a Reason, and an Example?</li>
+            <li><strong>Spoke clearly:</strong> Could the listener understand every word without straining?</li>
+            <li><strong>Finished naturally:</strong> Did you come to a smooth stop, or trail off awkwardly?</li>
+          </ul>
+        </div>
+      </div>
+      <div style="padding:0 20px 20px;">
+        <table class="drill-table">
+          <thead>
+            <tr>
+              <th>Q</th>
+              <th>Question / Topic</th>
+              <th>Started ≤3s ☐</th>
+              <th>Used A.R.E ☐</th>
+              <th>Spoke Clearly ☐</th>
+              <th>Finished Naturally ☐</th>
+              <th>Score /4</th>
+            </tr>
+          </thead>
+          <tbody id="drill-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ===== SECTION W: UPGRADE ===== -->
+    <div class="section-banner bg-green" style="margin-top:36px;">
+      <div class="section-letter-badge">W</div>
+      <div class="section-text">
+        <div class="section-eyebrow">Section W · Answer Practice</div>
+        <div class="section-title">Upgrade Your Answer</div>
+        <div class="section-sub">Expand short answers using the A.R.E Framework</div>
+      </div>
+    </div>
+    <div class="section-body">
+      <div style="padding:16px 20px;">
+        <div class="info-panel" style="border-color:var(--green);">
+          Read the <strong>Weak</strong> answer below. Write a much better answer in the green row using the A.R.E Framework. Aim for 2–4 natural-sounding sentences.
+        </div>
+        <div id="upgrade-container"></div>
+      </div>
+    </div>
+
+    <!-- ===== SECTION X: RECORDING ===== -->
+    <div class="section-banner bg-purple" style="margin-top:36px;">
+      <div class="section-letter-badge">X</div>
+      <div class="section-text">
+        <div class="section-eyebrow">Section X · Self Study</div>
+        <div class="section-title">Recording Task</div>
+        <div class="section-sub">Record 5 answers and evaluate yourself using the checklist</div>
+      </div>
+    </div>
+    <div class="section-body">
+      <div style="padding:16px 20px 0;">
+        <div class="info-panel" style="border-color:var(--purple);">
+          Choose any 5 questions from this worksheet. Record yourself on your phone without reading from notes. Play each recording back and tick the checklist honestly.
+        </div>
+      </div>
+      <div style="padding:0 20px 20px;">
+        <table class="rec-table">
+          <thead>
+            <tr>
+              <th style="text-align:left;min-width:200px">Evaluation Criterion</th>
+              <th>Q 1</th><th>Q 2</th><th>Q 3</th><th>Q 4</th><th>Q 5</th>
+              <th style="text-align:left;min-width:160px">Notes for Improvement</th>
+            </tr>
+          </thead>
+          <tbody id="rec-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ===== SECTION Y: SELF EVAL ===== -->
+    <div class="section-banner bg-teal" style="margin-top:36px;">
+      <div class="section-letter-badge">Y</div>
+      <div class="section-text">
+        <div class="section-eyebrow">Section Y · Reflection</div>
+        <div class="section-title">Self-Evaluation</div>
+        <div class="section-sub">Can-do statements — complete honestly at the end of the lesson</div>
+      </div>
+    </div>
+    <div class="section-body">
+      <div style="padding:16px 20px 0;">
+        <div class="info-panel" style="border-color:var(--teal);">
+          Complete this table at the end of the lesson. Be honest — if any box is <strong>Not Yet</strong>, write a specific action plan to address it before next lesson.
+        </div>
+      </div>
+      <div style="padding:0 20px 20px;">
+        <table class="eval-table">
+          <thead>
+            <tr>
+              <th style="text-align:left;">Can-Do Statement</th>
+              <th>Yes ☐</th>
+              <th>Not Yet ☐</th>
+              <th style="text-align:left;">My Action Plan</th>
+            </tr>
+          </thead>
+          <tbody id="eval-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ===== TEACHER COMMENT ===== -->
+    <div class="section-heading" style="margin-top:36px;">
+      <span class="sh-badge" style="background:#2C2C2C;">TEACHER</span>
+      Feedback &amp; Targets
+    </div>
+    <div class="teacher-block">
+      <div class="teacher-row">
+        <div class="teacher-label" style="background:var(--green);">
+          <div class="tl-icon">✦</div>
+          <div class="tl-name">Strengths</div>
+        </div>
+        <div class="teacher-content" style="background:var(--green-p);">
+          <div class="teacher-hint">What did the student do well? (fluency, vocabulary use, A.R.E structure, confidence, response time…)</div>
+          <textarea placeholder="Write teacher feedback here…"></textarea>
+        </div>
+      </div>
+      <div class="teacher-row">
+        <div class="teacher-label" style="background:var(--red);">
+          <div class="tl-icon">△</div>
+          <div class="tl-name">Improve</div>
+        </div>
+        <div class="teacher-content" style="background:var(--red-l);">
+          <div class="teacher-hint">What specific areas should the student work on before next lesson?</div>
+          <textarea placeholder="Write areas for improvement here…"></textarea>
+        </div>
+      </div>
+      <div class="teacher-row">
+        <div class="teacher-label" style="background:var(--gold);background:var(--gold);">
+          <div class="tl-icon">→</div>
+          <div class="tl-name" style="color:var(--navy);">Next Target</div>
+        </div>
+        <div class="teacher-content" style="background:var(--gold-l);">
+          <div class="teacher-hint">One specific, measurable target for the student to achieve by the next lesson.</div>
+          <textarea placeholder="Write the target here…"></textarea>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /content -->
+</div><!-- /page -->
+
+<script>
+// ============================================================
+// DATA
+// ============================================================
+const sections = [
+  { letter:"A", title:"Days Off", sub:"Questions 1–4  ·  Leisure and free time", color:"navy",
+    questions:["When was the last time you had a few days off?","What do you usually do when you have days off?","Do you usually spend your days off with your parents or with your friends?","What would you like to do if you had a day off tomorrow?"],
+    vocab:["time to oneself","retreat","recharge my batteries","hectic","unwind","catch up on","ease my mind","immerse myself in nature","leisure time","cup of tea","up to my ears","sleep in","pamper myself"]},
+
+  { letter:"B", title:"Gifts", sub:"Questions 5–9  ·  Giving and receiving presents", color:"green",
+    questions:["Have you ever sent handmade gifts to others?","Have you ever received a great gift?","What do you consider when choosing a gift?","Do you think you are good at choosing gifts?","What gift have you received recently?"],
+    vocab:["handmade gift","sincere","thoughtful","high-end","take into account","recipient","practical","break the bank","observant","generic","customized","fountain pen","sophisticated"]},
+
+  { letter:"C", title:"Morning Time", sub:"Questions 10–14  ·  Morning habits and routines", color:"teal",
+    questions:["Do you like getting up early in the morning?","What do you usually do in the morning?","What did you do in the morning when you were little? Why?","Are there any differences between what you do in the morning now and what you did in the past?","Do you spend your mornings doing the same things on both weekends and weekdays? Why?"],
+    vocab:["night owl","early bird","morning ritual","meditate","nutritious breakfast","primary student","highlight of my day","carefree","stark contrast","laid-back","fast-paced","on the go","lose track of time","leisurely"]},
+
+  { letter:"D", title:"Keys", sub:"Questions 15–18  ·  Everyday objects and habits", color:"orange",
+    questions:["Do you always bring a lot of keys with you?","Have you ever lost your keys?","Do you often forget the keys and lock yourself out?","Do you think it's a good idea to leave your keys with a neighbor?"],
+    vocab:["minimalist","bulky","keychain","cumbersome","commute","locksmith","gain access to","nerve-wracking","absent-minded","digital lock","a thing of the past","spare key","lifesaver","keep an eye on"]},
+
+  { letter:"E", title:"Reading", sub:"Questions 19–22  ·  Reading habits and preferences", color:"purple",
+    questions:["Do you like reading?","Do you prefer to read on paper or on a screen?","When do you need to read carefully, and when not?","Do you prefer scanning or detailed reading?"],
+    vocab:["voracious reader","hit the sack","broaden my horizons","hustle and bustle","physical books","tech-savvy","portability","read intensively","misinterpretation","flip through","scanning","filter out","irrelevant","key takeaways"]},
+
+  { letter:"F", title:"Food", sub:"Questions 23–26  ·  Food preferences and change over time", color:"red",
+    questions:["What is your favourite food?","What kind of food did you like when you were young?","Do you eat different foods at different times of the year?","Has your favourite food changed since you were a child?"],
+    vocab:["all-time favorite","steaming","savory","satisfy my cravings","have a sweet tooth","obsessed with","rich","fluctuate","hearty","beat the heat","radical change","palate","picky eater","health-conscious"]},
+
+  { letter:"G", title:"Animals and Pets", sub:"Questions 27–30  ·  Animals and pet ownership", color:"green",
+    questions:["What's your favorite animal? Why?","Where do you prefer to keep your pet, indoors or outdoors?","Have you ever had a pet before?","What is the most popular animal in Vietnam?"],
+    vocab:["docile","loyalty","companion","indoors","backyard","kennel","inhumane","stray cat","swamped with","nurture","national symbol","rural areas","domestic pets"]},
+
+  { letter:"H", title:"Dreams", sub:"Questions 31–34  ·  Night dreams and personal aspirations", color:"purple",
+    questions:["Can you remember the dreams you had?","Do you share your dreams with others?","Do you think dreams have special meanings?","Do you want to make your dreams come true?"],
+    vocab:["fragmented","fade away","vivid","nightmare","bizarre","dream interpretation","recount","subconscious","deepest fears","around the clock","lifelong ambition","proficiency","turn my vision into reality"]},
+
+  { letter:"I", title:"Sports Team", sub:"Questions 35–38  ·  Team sports and culture", color:"teal",
+    questions:["Have you ever been part of a sports team?","Are team sports popular in your culture?","Do you like watching team games? Why?","What are the differences between team sports and individual sports?"],
+    vocab:["integral","sportsmanship","sense of belonging","massive following","all walks of life","keen on","unpredictable","electrifying","distinction","solely","synergy","collaborate"]},
+
+  { letter:"J", title:"Childhood Activities", sub:"Questions 39–40  ·  Activities and preferences from childhood", color:"orange",
+    questions:["What were your favourite activities when you were a child?","Did you prefer to do activities alone or with a group of people when you were a child?"],
+    vocab:["obsessed with","vast","paddy field","carefree","blissful","introvert","solitary","gregarious","exhausting"]},
+
+  { letter:"K", title:"Scenery", sub:"Questions 41–44  ·  Landscapes, travel, and photography", color:"navy",
+    questions:["Do you look out the window at the scenery when travelling by bus or car?","Do you prefer the mountains or the sea?","Do you like to take scenery pictures?","What are the most beautiful sights you have seen while travelling?"],
+    vocab:["feast my eyes on","passing landscapes","kill time","mountain person","tranquility","therapeutic","capture the moment","preserve","breath-taking","terraced rice fields","stunning","once-in-a-lifetime"]},
+
+  { letter:"L", title:"Walking", sub:"Questions 45–49  ·  Walking habits and favourite places", color:"green",
+    questions:["Do you walk a lot?","Did you often go outside to have a walk when you were a child?","Why do people like to walk in parks?","Where would you like to take a long walk if you had the chance?","Where did you go for a walk lately?"],
+    vocab:["incorporate","brisk walk","burn off some calories","clear my head","wander","leisurely stroll","serene","greenery","refreshing","picturesque","snow-capped","pristine","gentle breeze","pleasant"]},
+
+  { letter:"M", title:"Buildings", sub:"Questions 50–52  ·  Architecture and urban environments", color:"teal",
+    questions:["Are there tall buildings near your home?","Do you take photos of buildings?","Is there a building that you would like to visit?"],
+    vocab:["high-rise","urbanization","skyline","architectural photography","intricate","futuristic","visually appealing","fascinated by","unprecedented","observation deck"]},
+
+  { letter:"N", title:"Typing", sub:"Questions 53–56  ·  Typing habits and technology preferences", color:"orange",
+    questions:["Do you prefer typing or handwriting?","Do you type on a desktop or laptop keyboard every day?","When did you learn how to type on a keyboard?","How do you improve your typing?"],
+    vocab:["efficiency","draft","accustomed to","internalize","mechanical keyboard","tactile","on the move","built-in","clumsy","touch-typing","hone","words per minute","posture","strain"]},
+
+  { letter:"O", title:"Staying with Old People", sub:"Questions 57–59  ·  Working with older generations", color:"purple",
+    questions:["Have you ever worked with old people?","Are you happy to work with people who are older than you?","What are the advantages of working with old people?"],
+    vocab:["collaborate","mentor","a wealth of experience","keen on","professionalism","generation gap","merit","profound","rectify","emotional maturity"]},
+
+  { letter:"P", title:"Doing Something Well", sub:"Questions 60–62  ·  Achievements, praise, and compliments", color:"red",
+    questions:["Do you have an experience that you did something well?","Do you have an experience that your teacher thought you did a good job?","Do you often tell your friends when they do something well?"],
+    vocab:["achieve","master","excel","praise","visionary","motivated","recognize","sincere compliments","strengthen our bond","confidence booster"]},
+
+  { letter:"Q", title:"Rules", sub:"Questions 63–66  ·  School rules, discipline, and authority", color:"navy",
+    questions:["Are there any rules for students at your school?","Do you think students would benefit more from more rules?","What rules did your teacher tell you when you were a child?","Did any teacher require you to strictly follow these rules?"],
+    vocab:["strict","attendance","code of conduct","limit creativity","disciplined","dress code","uniform","serious","responsible"]},
+
+  { letter:"R", title:"Plants", sub:"Questions 67–70  ·  Plants, gardening, and gifts", color:"green",
+    questions:["Do you keep plants at home?","What plant did you grow when you were young?","Do you know anything about growing a plant?","Do Vietnamese people send plants as gifts?"],
+    vocab:["lively","succulent","money tree","memorable","bloom","gardening","soil","healthy","potted plant","symbolize","prosperity"]},
+
+  { letter:"S", title:"Museum", sub:"Questions 71–74  ·  Museums, culture, and history", color:"teal",
+    questions:["Do you think museums are important?","Are there many museums in your hometown?","Do you often visit a museum?","When was the last time you visited a museum?"],
+    vocab:["vital","preserve","future generations","plenty of","tourists","diverse","gather information","impressive","relaxing"]},
+
+  { letter:"T", title:"Advertisements", sub:"Questions 75–77  ·  Advertising and media", color:"orange",
+    questions:["Do you often remember advertisements or commercials that you've seen?","What do you usually do when an advertisement comes on TV or the Internet?","Would you like to be in an advertisement one day? Why or why not?"],
+    vocab:["memorize","catchy","skip","curious","fascinating","promote","behind the scenes","film crew"]},
+
+  { letter:"U", title:"Drawing and Art Galleries", sub:"Questions 78–81  ·  Art, creativity, and galleries", color:"purple",
+    questions:["Did you learn to draw or paint when you were younger?","Have you ever visited an art gallery?","Do you like looking at drawings or paintings?","Would you like to learn more about art in the future?"],
+    vocab:["watercolours","landscape","creativity","art exhibition","unwind","impressive artworks","fond of","abstract paintings","clear my head","aesthetic sense"]},
+];
+
+const ARE_HINTS = ["State your direct answer.", "Give one clear reason.", "Add a personal example or memory."];
+
+// ============================================================
+// RENDER SECTIONS
+// ============================================================
+let globalQ = 1;
+const container = document.getElementById('sections-container');
+
+sections.forEach(sec => {
+  const wrapper = document.createElement('div');
+
+  // Banner
+  const banner = document.createElement('div');
+  banner.className = `section-banner bg-${sec.color}`;
+  banner.style.marginTop = '36px';
+  banner.innerHTML = `
+    <div class="section-letter-badge">${sec.letter}</div>
+    <div class="section-text">
+      <div class="section-eyebrow">Section ${sec.letter}</div>
+      <div class="section-title">${sec.title}</div>
+      <div class="section-sub">${sec.sub}</div>
+    </div>`;
+  wrapper.appendChild(banner);
+
+  // Body
+  const body = document.createElement('div');
+  body.className = 'section-body';
+
+  // Questions
+  sec.questions.forEach(q => {
+    const areBox = document.createElement('div');
+    areBox.className = 'are-box';
+
+    // Question header
+    areBox.innerHTML = `
+      <div class="q-header">
+        <div class="q-num col-${sec.color}">Q${globalQ}</div>
+        <div class="q-text">${q}</div>
+      </div>`;
+
+    // A R E rows
+    ['A','R','E'].forEach((letter, i) => {
+      const row = document.createElement('div');
+      row.className = 'are-input-row';
+      row.innerHTML = `
+        <div class="are-side col-${sec.color}">
+          <div class="are-side-letter">${letter}</div>
+          <div class="are-side-label">${['Answer','Reason','Example'][i]}</div>
+        </div>
+        <div class="are-hint-col">
+          <div class="are-hint">${ARE_HINTS[i]}</div>
+        </div>
+        <div class="are-write-col">
+          <input class="write-line" type="text" placeholder=" ">
+          <input class="write-line" type="text" placeholder=" ">
+        </div>`;
+      areBox.appendChild(row);
+    });
+
+    body.appendChild(areBox);
+    globalQ++;
+  });
+
+  // Vocab
+  const vocabDiv = document.createElement('div');
+  vocabDiv.className = 'vocab-section';
+  vocabDiv.innerHTML = `<div class="vocab-label">📖 Useful Vocabulary</div>
+    <div class="vocab-chips">${sec.vocab.map(w=>`<span class="vocab-chip">${w}</span>`).join('')}</div>`;
+  body.appendChild(vocabDiv);
+
+  wrapper.appendChild(body);
+  container.appendChild(wrapper);
+});
+
+// ============================================================
+// DRILL TABLE
+// ============================================================
+const drillBody = document.getElementById('drill-body');
+for (let i = 1; i <= 10; i++) {
+  const tr = document.createElement('tr');
+  tr.innerHTML = `
+    <td class="qnum-cell">${i}</td>
+    <td><input type="text" style="width:100%;border:none;border-bottom:1px solid #ccc;background:transparent;font-family:var(--font-body);font-size:13px;outline:none;padding:2px 0;" placeholder="Question asked…"></td>
+    <td class="cb">☐</td>
+    <td class="cb">☐</td>
+    <td class="cb">☐</td>
+    <td class="cb">☐</td>
+    <td><input type="text" style="width:50px;border:none;border-bottom:1px solid #ccc;background:transparent;text-align:center;font-family:var(--font-mono);font-size:13px;outline:none;" placeholder="  /4"></td>`;
+  drillBody.appendChild(tr);
+}
+
+// ============================================================
+// UPGRADE BLOCKS
+// ============================================================
+const upgrades = [
+  ["Do you like reading?", "Yes, I do."],
+  ["What is your favourite food?", "I like Phở."],
+  ["Do you like mornings?", "Not really."],
+  ["Do you often visit museums?", "Not often."],
+  ["Do you like walking?", "Yes."],
+];
+const upgContainer = document.getElementById('upgrade-container');
+upgrades.forEach(([q, weak], i) => {
+  const block = document.createElement('div');
+  block.className = 'upgrade-block';
+  block.innerHTML = `
+    <div class="upgrade-q"><span>${i+1}.</span>${q}</div>
+    <div class="upgrade-row">
+      <div class="upgrade-label weak">WEAK</div>
+      <div class="upgrade-content weak-text">${weak}</div>
+    </div>
+    <div class="upgrade-row">
+      <div class="upgrade-label better">BETTER</div>
+      <div class="upgrade-content"><textarea placeholder="Write your improved answer here using A.R.E…"></textarea></div>
+    </div>`;
+  upgContainer.appendChild(block);
+});
+
+// ============================================================
+// RECORDING TABLE
+// ============================================================
+const recCriteria = [
+  "I answered within 3 seconds",
+  "I used the A.R.E Framework",
+  "My answer was 20–30 seconds long",
+  "My voice was clear and audible",
+  "I gave a personal, specific example",
+  "I did not repeat the same opener",
+  "My grammar sounded natural",
+];
+const recBody = document.getElementById('rec-body');
+recCriteria.forEach((c, i) => {
+  const tr = document.createElement('tr');
+  tr.innerHTML = `
+    <td>${c}</td>
+    <td class="cb">☐</td><td class="cb">☐</td><td class="cb">☐</td><td class="cb">☐</td><td class="cb">☐</td>
+    <td><input type="text" placeholder="Notes…"></td>`;
+  recBody.appendChild(tr);
+});
+
+// ============================================================
+// SELF-EVAL TABLE
+// ============================================================
+const evalStatements = [
+  "I can begin answering Part 1 questions within 3 seconds",
+  "I can give a clear reason after my direct answer",
+  "I can add a natural personal example without hesitation",
+  "I can avoid one-word or one-sentence answers",
+  "I can speak continuously for 20–30 seconds on any topic",
+  "I understand and can use the A.R.E Framework correctly",
+  "I feel more confident about the IELTS Speaking Part 1",
+  "I know at least 5 useful openers and when to use them",
+];
+const evalBody = document.getElementById('eval-body');
+evalStatements.forEach((s, i) => {
+  const tr = document.createElement('tr');
+  tr.innerHTML = `
+    <td>${s}</td>
+    <td class="cb">☐</td>
+    <td class="cb">☐</td>
+    <td><input type="text" placeholder="My action plan…"></td>`;
+  evalBody.appendChild(tr);
+});
+</script>
+</body>
+</html>
